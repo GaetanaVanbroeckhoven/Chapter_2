@@ -1,0 +1,1066 @@
+body{
+  background-color: white;
+  font-family: "Lt Oksana";
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* gebouw*/
+.gebouw {
+  width:6em;
+  height:6em;
+  border-radius:6em;
+  margin-left: 30%;
+  margin-top: -40%;
+  margin-bottom: 10%;
+  background-color: white;
+  background-image: url(gebouw.jpg);
+  background-size: cover;
+  background-position: left;
+  border: 5px solid white;
+  box-shadow:0 0 10px #666;
+  z-index: 1100;
+}
+
+a{
+  text-decoration: none;
+}
+/*menu*/
+.banner {
+    font-size: 1.3em;
+    height: 3.5em;
+    background-color:rgba(23,111,100,1);
+    margin-left: -1%;
+    margin-top: 1%;
+    padding: 10px 0;
+    width: 102%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    cursor:pointer;
+    transition: 1.5s;
+    margin-right: 5%;
+}
+
+.banner a:hover {
+    color:rgba(86, 220, 205,1);
+    text-decoration: none;
+}
+
+.banner a:focus {
+    color:rgba(86, 220, 205,1);
+    text-decoration: none;
+}
+
+ul {
+    width: 85%;
+    float: right;
+    margin-right: -20%;
+    margin-top: -4.35%;
+}
+
+ul li {
+    display: inline;
+    padding-right: 25px;
+}
+
+.logonav{
+  background-image: url(logo.png);
+  height: 6em;
+  width: 10.75%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -0.7%;
+  margin-left: 1%;
+  transition: 1.5s;
+  cursor:pointer;
+}
+
+.logonav:hover{
+  transform: scale(1.1);
+}
+
+/*slider*/
+#slider-wrapper {
+  width: 100%;
+  height: 750px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top:7.1%;
+  margin-bottom: 0%;
+  margin-left: -0.4%;
+  position: absolute;
+  overflow: hidden;
+  display: block;
+}
+
+#s1 {
+  padding: 6px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -36px;
+  border-radius: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s2 {
+  padding: 6px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -12px;
+  border-radius: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s3 {
+  padding: 6px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: 12px;
+  border-radius: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s4 {
+  padding: 6px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: 36px;
+  border-radius: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#s1:hover,
+#s2:hover,
+#s3:hover,
+#s4:hover {
+  opacity: .50;
+}
+
+.inner-wrapper {
+  width: 100%;
+  height: 750px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.control {
+  display: none;
+}
+
+#Slide1:checked ~ .overflow-wrapper {
+  margin-left: 0%;
+}
+
+#Slide2:checked ~ .overflow-wrapper {
+  margin-left: -100%;
+}
+
+#Slide3:checked ~ .overflow-wrapper {
+  margin-left: -200%;
+}
+
+#Slide4:checked ~ .overflow-wrapper {
+  margin-left: -300%;
+}
+
+#Slide1:checked + #s1 {
+  opacity: 1;
+}
+
+#Slide2:checked + #s2 {
+  opacity: 1;
+}
+
+#Slide3:checked + #s3 {
+  opacity: 1;
+}
+
+#Slide4:checked + #s4 {
+  opacity: 1;
+}
+
+.overflow-wrapper {
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+
+.slide img {
+  width: 25%;
+  float: left;
+}
+
+/*pagina's frames*/
+#page2, #page3, #page4, #page5, #page6 {
+  width: 70%;
+  height: 750px;
+  margin-top: 7.1%;
+  position: absolute;
+  margin-left: 15%;
+}
+
+/*teksten en titels*/
+h2{
+  font-size: 3em;;
+  color:rgba(52, 169, 154,1);
+  margin-left: 0%;
+  margin-top: 0.5%;
+  font-family: "lt oksana";
+  font-weight: lighter;
+}
+
+.tekst, .tekst2{
+  width: 35%;
+  height: 20em;
+  margin-top: 5%;
+  margin-left: 0%;
+  margin-bottom: 14%;
+  font-size: 0.35em;
+  line-height: 1.6em;
+  font-weight: normal;
+  color: black;
+  font-family: "century gothic";
+  font-style: normal;
+}
+
+.tekst2{
+  width: 50%;
+  line-height: 1.9em;
+}
+
+span{
+  font-weight: bold;
+  font-family: "century gothic";
+  color:rgba(52, 169, 154,1);
+}
+
+/*concept*/
+video{
+  width: 55%;
+  border: 1px solid white;
+  box-shadow: 2px 2px 4px lightgrey;
+  float: right;
+  margin-top: 11.25%;
+}
+
+/*app*/
+.qr{
+  width: 10%;
+  height: 2.8em;
+  margin-top: -10%;
+  margin-left: -1%;
+  background-image: url(QR.png);
+  background-size: cover;
+}
+
+#hier{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "lt oksana";
+  color:rgba(52, 169, 154,1);
+}
+
+.foto2{
+  background-image: url(tbsm.jpg);
+  width: 45%;
+  height: 8.5em;
+  border-radius:0em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow:none;
+  float: right;
+  margin-top: -38.75%;
+  border: 5px solid #fff;
+  box-shadow:0 0 10px #666;
+}
+
+/*fotogallerij*/
+.inspiratie {
+  width: 29.8em;
+  height: 13.2em;
+  margin-top: -1.5%;
+  margin-left: 0%;
+}
+
+.kader {
+  box-sizing: border-box;
+  width: 6.5em;
+  height: 3.8em;
+  float: left;
+  margin-right: 2%;
+  background-size: cover;
+  transition: transform 1s;
+  margin-bottom: 2%;
+}
+
+.kader:hover{
+  transform: scale(1.8);
+}
+
+.kader:nth-child(4), .kader:nth-child(8), .kader:nth-child(12) {
+  margin-right: 0;
+}
+.eerstef1{
+  background-image: url(a.jpg);
+}
+
+.eerstef2{
+  background-image: url(b.jpg);
+}
+
+.eerstef3{
+  background-image: url(c.jpg);
+}
+
+.eerstef4{
+  background-image: url(d.jpg);
+}
+
+.eerstef5{
+  background-image: url(e.jpg);
+}
+
+.eerstef6{
+  background-image: url(f.jpg);
+}
+
+.eerstef7{
+  background-image: url(g.jpg);
+}
+
+.eerstef8{
+  background-image: url(h.jpg);
+}
+
+.eerstef9{
+  background-image: url(i.jpg);
+}
+
+.eerstef10{
+  background-image: url(j.jpg);
+}
+
+.eerstef11{
+  background-image: url(k.jpg);
+}
+
+.eerstef12{
+  background-image: url(l.jpg);
+}
+
+
+/*steunen*/
+.inspiratieke {
+  margin-top: -46.25%;
+  width: 9em;
+  height: 13.2em;
+  float: right;
+}
+
+.kaderke {
+  box-sizing: border-box;
+  width: 4.2em;
+  height: 4.2em;
+  border-radius: 4.2em;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s;
+  border: 5px solid rgba(52, 169, 154,1);
+  box-shadow:0 0 10px #666;
+}
+
+.kaderke:hover{
+  transform: scale(1.8);
+}
+
+.kaderke:nth-child(2), .kaderke:nth-child(4), .kaderke:nth-child(6) {
+  margin-right: 0;
+}
+
+.eerstem1{
+  background-image: url(m1.jpg);
+}
+
+.eerstem2{
+  background-image: url(m2.jpg);
+}
+
+.eerstem3{
+  background-image: url(m3.jpg);
+}
+
+.eerstem4{
+  background-image: url(m4.jpg);
+}
+
+.eerstem5{
+  background-image: url(m5.jpg);
+}
+
+.eerstem6{
+  background-image: url(m6.jpg);
+}
+
+/*kaart*/
+.gm{
+margin-top: -38.5%;
+margin-left: 40%;
+z-index: 1001;
+}
+
+#mapdeel1{
+  overflow:hidden;
+  height:500px;
+  width:500px;
+  border-radius:500px;
+  border: 5px solid #fff;
+  box-shadow:0 0 10px #666;
+  float: right;
+}
+
+#gmap_canvas{
+  height:500px;
+  width:500px;
+  border-radius:500px;
+  float: right;
+}
+
+/*footer*/
+.footer {
+  position: absolute;
+  width: 100.1%;
+  height: 1em;
+  margin-left: -0.5%;
+  margin-top: 47.3%;
+  background-color:black;
+}
+
+p{
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 10px;
+  font-weight: normal;
+  color:rgba(52, 169, 154,1);
+  font-family: "lt oksana";
+  margin-top: -0.2%;
+}
+
+.ruler{
+  width: 100.5%;
+  height: 0.4em;
+  margin-left: -0.5%;
+  margin-top: 47.3%;
+  background-color:rgba(52, 169, 154,1);
+  margin-top: 1%;
+}
+
+@media (max-width: 1920px){
+  #gmap_canvas, #mapdeel1{
+    height:600px;
+    width:600px;
+    border-radius:600px;
+  }
+
+  .gm{
+  margin-top: -42.5%;
+  margin-right: 2%;
+  }
+}
+
+@media (max-width: 1600px){
+
+  .gebouw {
+    width:5.5em;
+    height:5.5em;
+    border-radius:5.5em;
+    margin-left: 30%;
+    margin-top: -40%;
+    margin-bottom: 10%;
+  }
+
+  ul {
+      margin-top: -5.5%;
+      margin-right: -14.5%;
+  }
+
+  .logonav{
+    width: 12.8%;
+  }
+
+  .footer {
+    margin-top: 52%;
+  }
+
+  #slider-wrapper {
+    margin-top:10.5%;
+  }
+
+  #s1, #s2, #s3, #s4 {
+    margin-bottom: 8%;
+  }
+
+  video{
+    margin-top: 15.5%;
+  }
+
+  .foto2{
+    height: 7em;
+    width: 40%;
+    margin-top: -44.75%;
+  }
+
+  .tekst2{
+    width: 58%;
+    line-height: 1.9em;
+  }
+
+  h2{
+    margin-top: 3.8%;
+  }
+
+  .inspiratie {
+    width: 23em;
+    height: 11.5em;
+    margin-top: -3.7%;
+  }
+
+  .kader {
+    width: 5.35em;
+    height: 3.5em;
+  }
+
+  .inspiratieke {
+    width: 11em;
+    height: 11em;
+    margin-top: -56.25%;
+  }
+
+  .kaderke {
+    width: 4.1em;
+    height: 4.1em;
+    border-radius: 4.1em;
+  }
+
+  .gm{
+  margin-top: -46.5%;
+  }
+
+  .qr{
+    margin-top: -12%;
+  }
+  .footer {
+    margin-top: 50.3%;
+  }
+
+  .ruler{
+    margin-top: 1.25%;
+  }
+
+  #gmap_canvas, #mapdeel1{
+    height:450px;
+    width:450px;
+    border-radius:600px;
+  }
+
+  #page2, #page3, #page4, #page5, #page6 {
+    height: 650px; /*aanpassing*/
+  }
+}
+
+@media (max-width: 1366px){
+
+  .gebouw {
+    width:4.5em;
+    height:4.5em;
+    border-radius:4.5em;
+    margin-left: 30%;
+    margin-top: -40%;
+    margin-bottom: 10%;
+  }
+
+  body{
+    background-repeat: repeat;
+  }
+
+  ul {
+      margin-top: -6.8%;
+      margin-right: -7.5%;
+      font-size: 1em;
+  }
+
+  .logonav{
+    width: 14.5%;
+  }
+
+  #s1, #s2, #s3, #s4 {
+    margin-bottom: 18%;
+  }
+
+  video{
+    margin-top: 16.5%;
+  }
+
+  .foto2{
+    height: 5.5em;
+    width: 35%;
+    margin-top: -46.75%;
+  }
+
+  .tekst2{
+    width: 58%;
+    line-height: 1.9em;
+    font-size: 0.3em;
+  }
+  .tekst{
+      font-size: 0.3em;
+  }
+
+  h2{
+    margin-top: 3.8%;
+  }
+
+  .inspiratie {
+    width: 23em;
+    height: 11.5em;
+    margin-top: -3.7%;
+  }
+
+  .kader {
+    width: 4.55em;
+    height: 2.5em;
+  }
+
+  .kader:hover{
+    transform: scale(2.2);
+  }
+
+  .kaderke:hover{
+    transform: scale(2);
+  }
+
+  .inspiratieke {
+    width: 8.5em;
+    height: 11em;
+    margin-top: -58.25%;
+  }
+
+  .kaderke {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 3.5em;
+  }
+
+  .gm{
+    margin-top: -48.5%;
+  }
+
+  #gmap_canvas, #mapdeel1{
+    height:400px;
+    width:400px;
+    border-radius:400px;
+    float: right;
+  }
+
+  .qr{
+    margin-top: -14.2%;
+    width: 15%;
+    height: 2.8em;
+  }
+
+  .footer {
+    margin-top: 50.3%;
+  }
+
+  .ruler{
+    margin-top: 1.45%;
+  }
+
+  #page2, #page3, #page4, #page5, #page6 {
+    height: 550px; /*aanpassing*/
+  }
+}
+
+@media (max-width: 1280px){
+  .gebouw {
+    width:3.7em;
+    height:3.7em;
+    border-radius:3.7em;
+    margin-left: 33%;
+    margin-top: -40%;
+    margin-bottom: 10%;
+  }
+
+  body{
+    background-repeat: repeat;
+  }
+
+  ul {
+      margin-top: -6.8%;
+      margin-right: -7.5%;
+      font-size: 0.9em;
+  }
+
+  .logonav{
+    width: 14.5%;
+  }
+
+  .footer {
+    margin-top: 56.8%;
+  }
+  #s1, #s2, #s3, #s4 {
+    margin-bottom: 22%;
+  }
+
+  video{
+    margin-top: 16.8%;
+  }
+
+  .foto2{
+    height: 5.5em;
+    width: 35%;
+    margin-top: -46.75%;
+  }
+
+  .tekst2{
+    width: 58%;
+    line-height: 1.9em;
+    font-size: 0.27em;
+  }
+  .tekst{
+      font-size: 0.27em;
+  }
+
+  h2{
+    margin-top: 3.8%;
+  }
+
+  .inspiratie {
+    width: 23em;
+    height: 11.5em;
+    margin-top: -3.7%;
+  }
+
+  .kader {
+    width: 4.55em;
+    height: 2.5em;
+  }
+
+  .kader:hover{
+    transform: scale(2.2);
+  }
+
+  .kaderke:hover{
+    transform: scale(2);
+  }
+
+  .inspiratieke {
+    width: 8.5em;
+    height: 11em;
+    margin-top: -58.25%;
+  }
+
+  .kaderke {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 3.5em;
+  }
+
+  .gm{
+    margin-top: -48.5%;
+  }
+
+  #gmap_canvas, #mapdeel1{
+    height:400px;
+    width:400px;
+    border-radius:400px;
+    float: right;
+  }
+
+  .qr{
+    margin-top: -14.2%;
+    width: 15%;
+    height: 2.8em;
+  }
+
+  .footer {
+    margin-top: 52.3%;
+  }
+
+  .ruler{
+    margin-top: 1.65%;
+  }
+
+  #page2, #page3, #page4, #page5, #page6 {
+    height: 550px; /*aanpassing*/
+  }
+}
+
+@media (max-width: 1024px){
+  body{
+    background-repeat: repeat;
+  }
+
+  ul {
+      margin-top: -8.8%;
+      margin-right: -12%;
+      font-size: 0.7em;
+  }
+
+  ul li {
+      padding-right: 5px;
+  }
+
+  .logonav{
+    width: 18.5%;
+  }
+
+  .footer {
+    margin-top: 66.8%;
+  }
+
+  #s1, #s2, #s3, #s4 {
+    margin-bottom: 37%;
+  }
+
+  #slider-wrapper {
+    margin-top:18.1%;
+  }
+
+  video{
+    margin-top: 23.8%;
+  }
+
+  .foto2{
+    height: 3.9em;
+    width: 35%;
+    margin-top: -46.75%;
+  }
+
+  .tekst2{
+    width: 58%;
+    line-height: 1.9em;
+    font-size: 0.27em;
+  }
+  .tekst{
+      font-size: 0.27em;
+  }
+
+  h2{
+    margin-top: 7.8%;
+  }
+
+  .inspiratie {
+    width: 19em;
+    height: 11.5em;
+    margin-top: -3.7%;
+  }
+
+  .kader {
+    width: 3.8em;
+    height: 2.4em;
+  }
+
+  .kader:hover{
+    transform: scale(2.2);
+  }
+
+  .kaderke:hover{
+    transform: scale(2);
+  }
+
+  .inspiratieke {
+    width: 8.5em;
+    height: 11em;
+    margin-top: -64.25%;
+  }
+
+  .kaderke {
+    width: 3.1em;
+    height: 3.1em;
+    border-radius: 3.1em;
+  }
+
+  .gm{
+    margin-top: -53.5%;
+  }
+
+  #gmap_canvas, #mapdeel1{
+    height:370px;
+    width:370px;
+    border-radius:370px;
+    float: right;
+  }
+
+  .qr{
+    margin-top: -14.2%;
+    margin-left: -2%;
+    width: 15%;
+    height: 2.8em;
+  }
+
+  .footer {
+    margin-top: 60.3%;
+  }
+
+  .ruler{
+    margin-top: 1.85%;
+  }
+
+  #page2, #page3, #page4, #page5, #page6 {
+    height: 550px; /*aanpassing*/
+    width: 85%;
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 800px){
+  body{
+    background-repeat: repeat;
+  }
+
+  ul {
+      margin-top: -14.8%;
+      margin-right: -15%;
+      font-size: 0.85em;
+      line-height: 1.9em;
+  }
+
+  ul li {
+      padding-right: 15px;
+  }
+
+  .logonav{
+    width: 23.5%;
+  }
+
+  .footer {
+    margin-top: 66.8%;
+  }
+
+  #s1, #s2, #s3, #s4 {
+    margin-bottom: 57%;
+  }
+
+  #slider-wrapper {
+    margin-top:18.1%;
+  }
+
+  video{
+    margin-top: 23.8%;
+  }
+
+  .foto2{
+    height: 3.7em;
+    width: 30%;
+    margin-top: -56.75%;
+  }
+
+  .tekst2{
+    margin-top: -2%;
+    width: 70%;
+    line-height: 1.5em;
+    font-size: 0.26em;
+  }
+  .tekst{
+      font-size: 0.26em;
+      margin-top: -2%;
+      width: 45%;
+  }
+
+  h2{
+    margin-top: 7.8%;
+  }
+
+  .inspiratie {
+    width: 16em;
+    height: 11.5em;
+    margin-top: -7.7%;
+  }
+
+  .kader {
+    width: 3.3em;
+    height: 2em;
+  }
+
+  .kader:hover{
+    transform: scale(2.2);
+  }
+
+  .kaderke:hover{
+    transform: scale(2);
+  }
+
+  .inspiratieke {
+    width: 6em;
+    height: 11em;
+    margin-top: -67.25%;
+  }
+
+  .kaderke {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 2.5em;
+  }
+
+  .gm{
+    margin-top: -50.5%;
+  }
+
+  #gmap_canvas, #mapdeel1{
+    height:220px;
+    width:220px;
+    border-radius:220px;
+    float: right;
+  }
+
+  .qr{
+    margin-top: -14.2%;
+    margin-left: -2%;
+    width: 15%;
+    height: 2.8em;
+  }
+
+  .footer {
+    margin-top: 65.3%;
+  }
+
+  .ruler{
+    margin-top: 2.45%;
+  }
+
+  #page2, #page3, #page4, #page5, #page6 {
+    height: 550px; /*aanpassing*/
+    width: 90%;
+    margin-left: 4%;
+  }
+}
