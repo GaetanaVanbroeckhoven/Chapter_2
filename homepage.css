@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "font";
+    src: url("LRT Oksana.ttf");
+}
+
 body{
   background-color: white;
-  font-family: "Lt Oksana";
+  font-family: "font";
   background-image: url(bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -232,7 +237,7 @@ h2{
   color:rgba(52, 169, 154,1);
   margin-left: 0%;
   margin-top: 0.5%;
-  font-family: "lt oksana";
+  font-family: "font";
   font-weight: lighter;
 }
 
@@ -283,7 +288,7 @@ video{
 #hier{
   text-decoration: none;
   font-weight: bold;
-  font-family: "lt oksana";
+  font-family: "font";
   color:rgba(52, 169, 154,1);
 }
 
@@ -471,7 +476,7 @@ p{
   padding-top: 10px;
   font-weight: normal;
   color:rgba(52, 169, 154,1);
-  font-family: "lt oksana";
+  font-family: "font";
   margin-top: -0.2%;
 }
 
